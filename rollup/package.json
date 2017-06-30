@@ -1,0 +1,11 @@
+{
+  "name": "rollup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "alwaysonlinetxm",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.43.0",
+    "rollup-plugin-filesize": "^1.4.2"
+  }
+}

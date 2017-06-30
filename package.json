@@ -6,6 +6,7 @@
   "author": "alwaysoninetxm",
   "license": "MIT",
   "scripts": {
+    "rollup": "NODE_ENV=production ./rollup/node_modules/rollup/bin/rollup -c ./rollup/rollup.config.js",
     "webpack2": "NODE_ENV=production ./webpack2/node_modules/webpack/bin/webpack.js --progress --config ./webpack2/webpack.config.js"
   }
 }
