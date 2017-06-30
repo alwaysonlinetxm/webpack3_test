@@ -1,0 +1,10 @@
+{
+  "name": "webpack3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "alwaysonlinetxm",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.0.0"
+  }
+}

@@ -6,7 +6,7 @@ module.exports = function makeWebpackConfig(env) {
 	  entry: './src/main.js',
 	  output: {
 	    path: path.join(__dirname, '../dist'),
-	    filename: 'bundle.w2.js'
+	    filename: 'bundle.w3.js'
 	  },
 	  plugins: [
 			new webpack.optimize.UglifyJsPlugin({
