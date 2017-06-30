@@ -22,10 +22,15 @@ do
     data="${data} + m${k}"
     echo "import m${k} from './modules/module${k}.js';" >> ${main}
     echo "export default ${k}" > ./src/modules/module${k}.js
-  else
+  elif [ ${type} = 'func' ]
+  then
     data="${data} + m${k}()"
     echo "import m${k} from './modules/module${k}.js';" >> ${main}
     echo "export default function() { return ${k} }" > ./src/modules/module${k}.js
+  else
+    data="${data} + m${k}(${k})"
+    echo "import m${k} from './modules/module${k}.js';" >> ${main}
+    echo "export default function(n) { return ${k}*n }" > ./src/modules/module${k}.js
   fi
 done
 
