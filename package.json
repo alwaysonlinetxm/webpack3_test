@@ -6,8 +6,11 @@
   "author": "alwaysoninetxm",
   "license": "MIT",
   "scripts": {
-    "rollup": "NODE_ENV=production ./rollup/node_modules/rollup/bin/rollup -c ./rollup/rollup.config.js",
-    "webpack2": "NODE_ENV=production ./webpack2/node_modules/webpack/bin/webpack.js --progress --config ./webpack2/webpack.config.js",
-    "webpack3": "NODE_ENV=production ./webpack3/node_modules/webpack/bin/webpack.js --progress --config ./webpack3/webpack.config.js"
+    "dev_r": "NODE_ENV=development ./rollup/node_modules/rollup/bin/rollup -c ./rollup/rollup.config.js",
+    "dev_w2": "NODE_ENV=development ./webpack2/node_modules/webpack/bin/webpack.js --progress --config ./webpack2/webpack.config.js",
+    "dev_w3": "NODE_ENV=development ./webpack3/node_modules/webpack/bin/webpack.js --progress --config ./webpack3/webpack.config.js",
+    "prod_r": "NODE_ENV=production ./rollup/node_modules/rollup/bin/rollup -c ./rollup/rollup.config.js",
+    "prod_w2": "NODE_ENV=production ./webpack2/node_modules/webpack/bin/webpack.js --progress --config ./webpack2/webpack.config.js",
+    "prod_w3": "NODE_ENV=production ./webpack3/node_modules/webpack/bin/webpack.js --progress --config ./webpack3/webpack.config.js"
   }
 }

@@ -1,14 +1,18 @@
 var path = require('path');
 var webpack = require('webpack');
+var isProd = process.env.NODE_ENV === 'production';
 
 module.exports = function makeWebpackConfig(env) {
-	return {
+	var config = {
 	  entry: './src/main.js',
 	  output: {
 	    path: path.join(__dirname, '../dist'),
 	    filename: 'bundle.w3.js'
-	  },
-	  plugins: [
+	  }
+	};
+
+	if (isProd) {
+		config.plugins = [
 			new webpack.optimize.UglifyJsPlugin({
 	      compress: {
 	        sequences: true,
@@ -27,6 +31,7 @@ module.exports = function makeWebpackConfig(env) {
 	        comments: false
 	      }
 	    })
-	  ]
-	};
+	  ];
+	}
+	return config;
 }
