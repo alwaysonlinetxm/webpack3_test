@@ -8,30 +8,31 @@ module.exports = function makeWebpackConfig(env) {
 	  output: {
 	    path: path.join(__dirname, '../dist'),
 	    filename: 'bundle.w3.js'
-	  }
+	  },
+		plugins: [
+			new webpack.optimize.ModuleConcatenationPlugin()
+		]
 	};
 
 	if (isProd) {
-		config.plugins = [
-			new webpack.optimize.UglifyJsPlugin({
-	      compress: {
-	        sequences: true,
-	        dead_code: true,
-	        conditionals: true,
-	        booleans: true,
-	        unused: true,
-	        if_return: true,
-	        join_vars: true,
-	        drop_console: true,
-					drop_debugger: true,
-					loops: true,
-					properties: true
-	      },
-	      output: {
-	        comments: false
-	      }
-	    })
-	  ];
+		config.plugins.push(new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        sequences: true,
+        dead_code: true,
+        conditionals: true,
+        booleans: true,
+        unused: true,
+        if_return: true,
+        join_vars: true,
+        drop_console: true,
+				drop_debugger: true,
+				loops: true,
+				properties: true
+      },
+      output: {
+        comments: false
+      }
+    }));
 	}
 	return config;
 }
