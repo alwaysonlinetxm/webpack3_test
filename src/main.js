@@ -1,0 +1,11 @@
+import m1 from './modules/module1.js';
+import m2 from './modules/module2.js';
+import m3 from './modules/module3.js';
+import m4 from './modules/module4.js';
+import m5 from './modules/module5.js';
+import m6 from './modules/module6.js';
+import m7 from './modules/module7.js';
+import m8 from './modules/module8.js';
+import m9 from './modules/module9.js';
+import m10 from './modules/module10.js';
+var content = 0 + m1 + m2 + m3 + m4 + m5 + m6 + m7 + m8 + m9 + m10; document.body.innerHTML = content;

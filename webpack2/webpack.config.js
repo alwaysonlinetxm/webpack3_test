@@ -1,19 +1,13 @@
+var path = require('path');
 var webpack = require('webpack');
 
 module.exports = function makeWebpackConfig(env) {
 	return {
-	  entry: '../src/main.js',
+	  entry: './src/main.js',
 	  output: {
-	    path: './dist/',
-	    filename: 'bundle.js'
+	    path: path.join(__dirname, '../dist'),
+	    filename: 'bundle.w2.js'
 	  },
-	  // module: {
-	  //   rules: [{
-    //     test: /\.js$/,
-    //     exclude: /node_modules/,
-    //     use: 'babel-loader',
-	  //   }]
-	  // },
 	  plugins: [
 			new webpack.optimize.UglifyJsPlugin({
 	      compress: {

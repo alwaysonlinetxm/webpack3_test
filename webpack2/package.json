@@ -1,0 +1,10 @@
+{
+  "name": "webpack2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "alwaysonlinetxm",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "2.6.1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "webpack3_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alwaysonlinetxm/webpack3_test.git",
+  "author": "alwaysoninetxm",
+  "license": "MIT",
+  "scripts": {
+    "webpack2": "NODE_ENV=production ./webpack2/node_modules/webpack/bin/webpack.js --progress --config ./webpack2/webpack.config.js"
+  }
+}
