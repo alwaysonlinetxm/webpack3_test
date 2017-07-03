@@ -8,4 +8,4 @@ import m7 from './modules/module7.js';
 import m8 from './modules/module8.js';
 import m9 from './modules/module9.js';
 import m10 from './modules/module10.js';
-var content = 0 + m1() + m2() + m3() + m4() + m5() + m6() + m7() + m8() + m9() + m10(); document.body.innerHTML = content;
+var content = 0 + m1(1) + m2(2) + m3(3) + m4(4) + m5(5) + m6(6) + m7(7) + m8(8) + m9(9) + m10(10); document.body.innerHTML = content;
